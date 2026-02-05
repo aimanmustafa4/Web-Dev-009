@@ -1,0 +1,23 @@
+* {
+    /* background-color: blueviolet;
+    color: azure; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: blueviolet;
+    color: azure;
+    width: 500px;
+}
+
+.para{
+    background-color: burlywood;
+    color: palevioletred;
+}
+
+#para{
+    background-color: blue;
+    color: white;
+}
