@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box1 {
+            background-color: darkblue;
+            color: white;
+            border: 5px solid rebeccapurple;
+            border-radius: 1rem;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            padding: 20px;
+            /* transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease;
+            transition-delay: 1s; */
+            transition: all 2s ease .5s;
+        }
+
+        .box1:hover {
+            background-color: teal;
+            color: thistle;
+            border: 5px solid thistle;
+            /* border-radius: 50%; */
+            /* transform: rotate(270deg); */
+            /* transform: scaleY(2); */
+            /* transform: translateY(-50px); */
+            /* transform: skew(40deg); */
+        }
+
+        .box1:active {
+            background-color: rgb(7, 8, 8);
+            color: thistle;
+            border: 5px solid thistle;
+        }
+
+        .box2 {
+            background-color: rgb(21, 139, 0);
+            color: rgb(9, 9, 9);
+            border: 5px solid rgb(7, 6, 8);
+            border-radius: 1rem;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            padding: 20px;
+            /* transform: rotate(270deg); */
+            /* transform: scaleY(2); */
+            /* transform: translate(20px); */
+            /* transform: skew(-50deg); */
+        }
+
+        .box3 {
+            background-color: rgb(143, 14, 14);
+            color: rgb(9, 9, 9);
+            border: 5px solid rgb(7, 6, 8);
+            border-radius: 1rem;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            padding: 20px;
+            animation: box 2s ease .5s 5 normal;
+        }
+
+        @keyframes box {
+            0% {
+                background-color: rgb(143, 14, 14);
+                color: rgb(9, 9, 9);
+                border: 5px solid rgb(7, 6, 8);
+                border-radius: 1rem;
+                width: 200px;
+                height: 200px;
+                margin: 50px;
+                padding: 20px;
+            }
+
+            30%{
+                background-color: rgb(7, 172, 32);
+                color: rgb(209, 16, 16);
+                border: 5px solid rgb(223, 115, 6);
+                border-radius: 1rem;
+                width: 200px;
+                height: 200px;
+                margin: 50px;
+                padding: 20px;
+            }
+            50%{
+                background-color: rgb(185, 35, 160);
+                color: rgb(219, 204, 4);
+                border: 5px solid rgb(212, 200, 23);
+                border-radius: 1rem;
+                width: 200px;
+                height: 200px;
+                margin: 50px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box1">Transition</div>
+        <div class="box2">Transformation</div>
+        <div class="box3">Animation</div>
+    </div>
+</body>
+
+</html>
