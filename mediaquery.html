@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .div{
+            width: 200px; /* max width */
+            height: 200px;
+            background-color: brown;
+            border: 3px solid black;
+            border-radius: .5rem;
+        }
+        /* for media query 200px become the minimum  */
+        @media (min-width:200px) and (max-width:400px){
+            .div{
+                background-color: cadetblue;
+                color: white;
+            }
+        }
+        @media (min-width:400px) and (max-width:600px){
+            .div{
+                background-color: rgb(218, 77, 114);
+                color: rgb(8, 3, 3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, numquam dolor soluta quibusdam maiores ratione unde sunt corrupti qui perspiciatis! Officia quod nesciunt nisi totam earum ab exercitationem minima. Tempore!</div>
+</body>
+</html>
