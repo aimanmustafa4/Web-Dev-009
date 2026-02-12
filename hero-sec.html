@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero-Section</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* navbar */
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            width: 100%;
+        }
+
+        .items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+        }
+        .links ul li{
+            list-style: none;
+            padding: 1rem;
+        }
+        .links ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .btn-1{
+            background-color: darkgoldenrod;
+            padding:  .3rem 1rem;
+            border: 3px solid goldenrod;
+            border-radius: 1rem;
+        }
+        .btn-2{
+            background-color: darkgoldenrod;
+            padding:  .3rem 1rem;
+            border: 3px solid goldenrod;
+            border-radius: 1rem;
+        }
+        /* hero-sec */
+        .image{
+            background-image: url("green-natural-background-with-wooden-surface-free-image.webp");
+            width: 100vw;
+            height: 70vh;
+        }
+        .box{
+            width: 1000px;
+            padding: 150px;
+            position: relative;
+            left: 45rem;
+            top: 5rem;
+            /* padding-top: 150px; */
+        }
+        .head h1{
+            color: white;
+            font-size: 50px;
+            font-family: fantasy;
+        }
+        .para{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .btn button{
+            background-color: green;
+            color: white;
+            border: 3px solid white;
+            border-radius: .5rem;
+            margin: 3px;
+            padding: 5px 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+<!-- navbar -->
+<div class="navbar">
+        <div class="logo">
+            <img src="media/mtj.png"  width="100px"  alt="logo">
+        </div>
+        <div class="links">
+            <ul class="items">
+                <li><a href="#" id="item1">Home</a></li>
+                <li><a href="#" id="item2">About Us</a></li>
+                <li><a href="#" id="item3">Policy</a></li>
+                <li><a href="#" id="item4">Services</a></li>
+                <li><a href="#" id="item5">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <button class="btn-1">Login</button>
+            <button class="btn-2">Sign Up</button>
+        </div>
+    </div>
+
+
+
+<!-- hero-section -->
+    <div class="image">
+        <div class="box">
+            <div class="head"><h1>PUMA x FAST & FURIOUS</h1></div>
+            <div class="para">
+                Mountain lions are known by many names, including cougar, puma, catamount, painter, panther, and many
+                more. They are the most wide-ranging cat species in the world and are found as far north as Canada and
+                as far south as Chile.
+            </div>
+            <div class="btn">
+                <button>Shop the Collection</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
