@@ -29,8 +29,19 @@ console.log("Loops lecture");
 
 
 // 3- do-while loop
-let n = 0;
-do{
- console.log(n);
-    n++;
-}while(n<=5);
+// let n = 0;
+// do{
+//  console.log(n);
+//     n++;
+// }while(n<=5);
+
+
+// Table Generator
+let userNumber = prompt("Enter the number to generate table:");
+
+for(let index=1 ; index<=10 ; index++){
+    let product = userNumber*index;
+    // console.log(product);         (answers only)
+    // console.log(userNumber,"X",index ,"=",product);
+    console.log(`${userNumber} X ${index} = ${product}`); 
+}
